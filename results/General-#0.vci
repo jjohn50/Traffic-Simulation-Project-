@@ -1,0 +1,52 @@
+file 4571163 1588630969                                         
+version 2
+run General-0-20200504-18:22:32-1816
+attr configname General
+attr datetime 20200504-18:22:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TollBooth
+attr processid 1816
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.Drivers.interArrivalTime exponential(45s)
+param **.Lane1.serviceTime exponential(1s)
+param **.Lane2.serviceTime exponential(1s)
+param **.Lane3.serviceTime exponential(1s)
+param **.Lane4.serviceTime exponential(1s)
+param **.Drivers.numJobs 100000
+param **.LaneSelector.randomGateIndex bernoulli(0.5)
+param **.Lane1_2.randomGateIndex bernoulli(0.5)
+param **.Lane3_4.randomGateIndex bernoulli(0.5)
+
+vector 0 TollBooth.Lane1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 TollBooth.Lane2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 TollBooth.Lane3 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 TollBooth.Lane4 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 4 TollBooth.Turnpike lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+4	1402 1456723 6 196608 36.737575836931 1465758.362119089722 32768 7.2456029e-005 10.635149341482 32728.998140368 65452.026825048
+4	1458125 1500190 196618 393216 1465800.391897090549 2941056.969761917204 32768 2.9214852e-005 10.322387731306 33184.3314778 66905.90433671
+4	2958315 1500013 393222 589824 2941058.921722242157 4410416.467388584382 32768 6.2883015e-005 10.578455623003 32915.164218138 65655.886328941
+0	4458328 9125 0 598401 0 4476465.649264938409 281 0 1 140 140
+1	4467453 8533 0 599973 0 4488504.023830591828 265 0 2 136 140
+2	4475986 9075 0 597081 0 4466565.443158261775 281 0 3 146 156
+3	4485061 8468 0 589371 0 4406244.456515107932 261 0 2 132 134
+4	4493529 77632 589830 600000 4410464.008951253971 4488637.431299349105 1696 0.000627221227 9.987833826982 1750.5868713059 3749.7729106161
+

@@ -1,0 +1,160 @@
+version 2
+run General-0-20200504-18:22:32-1816
+attr configname General
+attr datetime 20200504-18:22:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TollBooth
+attr processid 1816
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.Drivers.interArrivalTime exponential(45s)
+param **.Lane1.serviceTime exponential(1s)
+param **.Lane2.serviceTime exponential(1s)
+param **.Lane3.serviceTime exponential(1s)
+param **.Lane4.serviceTime exponential(1s)
+param **.Drivers.numJobs 100000
+param **.LaneSelector.randomGateIndex bernoulli(0.5)
+param **.Lane1_2.randomGateIndex bernoulli(0.5)
+param **.Lane3_4.randomGateIndex bernoulli(0.5)
+
+scalar TollBooth.Drivers created:last 100000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar TollBooth.Lane1 busy:timeavg 0.0056323245584896
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar TollBooth.Lane1 queueingTime:mean 0.0062671863113032
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar TollBooth.Lane1 queueingTime:max 8.43524629563
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar TollBooth.Lane1 queueLength:timeavg 3.4799725347589e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TollBooth.Lane1 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TollBooth.Lane1 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar TollBooth.Lane2 busy:timeavg 0.005578660817361
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar TollBooth.Lane2 queueingTime:mean 0.0049554128783145
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar TollBooth.Lane2 queueingTime:max 4.612179562983
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar TollBooth.Lane2 queueLength:timeavg 2.7791855378717e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TollBooth.Lane2 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TollBooth.Lane2 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar TollBooth.Lane3 busy:timeavg 0.0055855039973814
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar TollBooth.Lane3 queueingTime:mean 0.0050276464353199
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar TollBooth.Lane3 queueingTime:max 3.981147877193
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar TollBooth.Lane3 queueLength:timeavg 2.7974072349094e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TollBooth.Lane3 queueLength:max 3
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TollBooth.Lane3 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar TollBooth.Lane4 busy:timeavg 0.0054893185202371
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar TollBooth.Lane4 queueingTime:mean 0.0056024252389093
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar TollBooth.Lane4 queueingTime:max 6.115750247031
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar TollBooth.Lane4 queueLength:timeavg 3.1112259440133e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TollBooth.Lane4 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TollBooth.Lane4 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar TollBooth.Turnpike generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar TollBooth.Turnpike generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar TollBooth.Turnpike delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar TollBooth.Turnpike delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar TollBooth.Turnpike queuesVisited:mean 0.00542
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar TollBooth.Turnpike queuesVisited:max 1
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar TollBooth.Turnpike totalServiceTime:mean 1.0003291266854
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar TollBooth.Turnpike totalServiceTime:max 10.578455623003
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar TollBooth.Turnpike totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar TollBooth.Turnpike totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar TollBooth.Turnpike totalQueueingTime:mean 0.0054616803907402
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar TollBooth.Turnpike totalQueueingTime:max 8.43524629563
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar TollBooth.Turnpike lifeTime:mean 1.0057908070761
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar TollBooth.Turnpike lifeTime:max 10.635149341482
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+
